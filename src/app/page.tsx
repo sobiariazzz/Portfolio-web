@@ -158,7 +158,7 @@ return (
 
     <footer>
       <div className="container">
-        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+        <p>&copy; 2024 Sobia. All rights reserved.</p>
         <div className="social-links">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github size={24} />
