@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './globals.css';
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react'
-import Image from "next/image";
 import dynamic from 'next/dynamic';
 
 
@@ -11,13 +10,9 @@ const DynamicImage = dynamic(() => import('next/image'), { ssr: false });
 export default function Home() {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isLoaded, setIsLoaded] = useState(false)
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
-  useEffect(() => {
-    setIsLoaded(true)
-  }, [])
 
   const projects = [
     { title: "Simple Calculator", description: "This is Simple Calculator which is create by next.js." },
